@@ -1,0 +1,67 @@
+.taste
+    padding: 50px 0
+    &__descr
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__subtitle
+        font-weight: 200
+        font-size: 17px
+        text-transform: none
+        color: $text_color
+        text-align: center
+        display: block
+        margin-top: 25px
+        line-height: 27px
+    &__products
+        padding: 50px 15px 75px 
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        &_item
+            min-height: 425px
+            width: 175px
+            padding: 0 27px
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 25px
+            img
+                max-height: 140px
+                max-width: 200px
+            &-descr
+                font-weight: 200
+                font-size: 12px
+                text-transform: none
+                color: $text_color
+                text-align: center
+                display: block
+                margin-top: 25px
+                line-height: 22px
+                &::before
+                    content: '...........'
+                    display: block
+                    color: $main_color
+                    margin-bottom: 7px
+                &::after
+                    content: '...........'
+                    display: block
+                    color: $main_color
+                    margin-top: 7px
+            &-price
+                margin: 15px 0
+                &::after
+                    content: ' €'
+                    color: $main_color
+                    font-size: 18px
+                    font-weight: 400
+            &-button
+                font-weight: 200
+                font-size: 12px
+                text-transform: none
+                color: $text_color
+                text-align: center
+                line-height: 27px
+                display: block
+                cursor: pointer
